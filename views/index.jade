@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  div(class='text-center')
+    form(style='max-width: 530px; padding: 15px; margin: auto;' method='POST', action='/link')
+      h1(class="h3 mb-3 font-weight-normal") Create a go/to link:
+      label(for="name" class="sr-only") Name
+      input(name="name" type="type" class="form-control" placeholder="MyShortName" required autofocus) 
+      label(for="link" class="sr-only") Link
+      input(name="link" type="text" class="form-control" placeholder="https://myawesomesite.com/" required) 
+      button(class="btn btn-lg btn-primary btn-block" type="submit") Go
+      p Note: Google Chrome only :-)
+  hr
+  div(class='text-left')
+  div(style='max-width: 530px; padding: 15px; margin: auto;')
+    h2 Using go/to links
+    ol
+      li Type "chrome://settings/searchEngines" in your browser's address bar
+      li Click the "Add" button
+      li Enter "go/to links" in the search engine field
+      li Enter "go/to" in the keyword field
+      li Enter "http://localhost:3000/%s" in the URL field
+      li Test it out by typing "go/to agile" in your address bar

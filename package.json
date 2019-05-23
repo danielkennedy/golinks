@@ -1,0 +1,23 @@
+{
+  "name": "atlinks",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "cookie-parser": "~1.4.3",
+    "cuss": "^1.13.1",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "jquery": "^3.4.0",
+    "morgan": "~1.9.0",
+    "popper.js": "^1.15.0",
+    "redis": "^2.8.0",
+    "serve-favicon": "^2.5.0"
+  }
+}
